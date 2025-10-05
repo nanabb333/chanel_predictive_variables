@@ -139,10 +139,9 @@ Trade_Weighted_USD_Index   -0.26
 
 **Mi-Qin (Tina) Chen**
 [mc3208a@american.edu](mailto:mc3208a@american.edu)
-American University — School of International Service
-Focus: International Political Economy & Data-Driven Luxury Market Analytics
-Supervised by **Prof. Krista Tuomi**
-
+* Focus: International Political Economy & Data-Driven Luxury Market Analytics
+* This research is supervised by **Prof. Krista Tuomi**
+ 
 ---
 
 ## License
