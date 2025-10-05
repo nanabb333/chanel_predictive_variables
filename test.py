@@ -38,10 +38,7 @@ fred_series_to_fetch = {
 
 }
 
-# --- 3. 设置时间范围 ---
-start_date = '2021-01-01'
-end_date = '2023-10-01'
-print(f"\n设置 FRED 数据获取时间范围: {start_date} 到 {end_date}")
+
 
 # --- 4. 获取数据 ---
 print("\n开始从 FRED 获取数据...")
