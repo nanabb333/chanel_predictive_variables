@@ -1,11 +1,11 @@
-# 👜 Chanel Predictive Variables
+# Chanel Predictive Variables
 
 A reproducible Python pipeline modeling **Chanel’s regional revenues** using macroeconomic indicators from **FRED** and **Eurostat**.  
 It compares **OLS (baseline)** and **LASSO (regularized)** regressions to identify the most influential predictors across the Americas and Europe.
 
 ---
 
-## 📘 Overview
+## Overview
 
 - Clean and merge macroeconomic + Chanel data  
 - Run OLS baseline regression for each region  
@@ -14,7 +14,7 @@ It compares **OLS (baseline)** and **LASSO (regularized)** regressions to identi
 
 ---
 
-## 🧭 Project Structure
+## Project Structure
 
 ```
 
@@ -38,7 +38,7 @@ It compares **OLS (baseline)** and **LASSO (regularized)** regressions to identi
 
 ---
 
-## ⚙️ Environment Setup
+## Environment Setup
 
 ```bash
 python -m venv .venv
@@ -51,7 +51,7 @@ pip install fredapi python-dotenv
 
 ---
 
-## ▶️ Run Scripts
+## Run Scripts
 
 ```bash
 python clean.py             # Prepare merged dataset
@@ -62,7 +62,7 @@ python lasso.py             # LASSO regression
 
 ---
 
-## 📊 Baseline Regression Summary
+## Baseline Regression Summary
 
 **Americas Revenue (OLS)**
 
@@ -88,7 +88,7 @@ python lasso.py             # LASSO regression
 
 ---
 
-## 🧩 LASSO Regression Summary
+## LASSO Regression Summary
 
 **Americas Revenue**
 
@@ -117,7 +117,7 @@ Trade_Weighted_USD_Index   -0.26
 
 ---
 
-## 🧠 Interpretation
+## Interpretation
 
 | Region   | Strong Negative Predictors                   | Strong Positive Predictors         |
 | :------- | :------------------------------------------- | :--------------------------------- |
@@ -126,7 +126,7 @@ Trade_Weighted_USD_Index   -0.26
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
 * Add cross-validation and rolling forecasts
 * Automate FRED API data collection
@@ -135,17 +135,17 @@ Trade_Weighted_USD_Index   -0.26
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Mi-Qin (Tina) Chen**
-📧 [mc3208a@american.edu](mailto:mc3208a@american.edu)
-🎓 American University — School of International Service
+[mc3208a@american.edu](mailto:mc3208a@american.edu)
+American University — School of International Service
 Focus: International Political Economy & Data-Driven Luxury Market Analytics
 Supervised by **Prof. Krista Tuomi**
 
 ---
 
-## 🪪 License
+## License
 
 This project is for **academic and research use**.
 Reuse and adaptation permitted with attribution.
