@@ -1,0 +1,77 @@
+=== Europe Revenue Regression ===
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         Europe_Revenue   R-squared:                       0.957
+Model:                            OLS   Adj. R-squared:                  0.957
+Method:                 Least Squares   F-statistic:                -1.080e+09
+Date:                Fri, 03 Oct 2025   Prob (F-statistic):               1.00
+Time:                        14:47:57   Log-Likelihood:                -9288.1
+No. Observations:                1461   AIC:                         1.860e+04
+Df Residuals:                    1449   BIC:                         1.866e+04
+Df Model:                          11                                         
+Covariance Type:              cluster                                         
+============================================================================================
+                               coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                     1.063e+05   2.33e+04      4.572      0.000    6.07e+04    1.52e+05
+Trade_Weighted_USD_Index   -49.3722     10.042     -4.917      0.000     -69.054     -29.690
+log_US_Real_GDP          -1.171e+04   2874.497     -4.072      0.000   -1.73e+04   -6071.299
+log_US_PCE                5716.1861   2876.212      1.987      0.047      78.915    1.14e+04
+US_CPI                      40.1847     12.328      3.260      0.001      16.022      64.348
+US_Consumer_Sentiment       -2.7343      2.935     -0.932      0.351      -8.486       3.017
+US_Federal_Funds_Rate       25.4836    162.499      0.157      0.875    -293.008     343.975
+log_EU_Real_GDP          -2353.0128   2072.733     -1.135      0.256   -6415.495    1709.469
+log_EU_Retail_Sales      -2099.5753    468.313     -4.483      0.000   -3017.451   -1181.699
+EU_HICP                    -10.3390     26.519     -0.390      0.697     -62.315      41.637
+EU_Consumer_Confidence      -3.9570      1.560     -2.536      0.011      -7.016      -0.899
+EU_ECB_Policy_Rate         126.5951    144.606      0.875      0.381    -156.827     410.017
+==============================================================================
+Omnibus:                       22.411   Durbin-Watson:                   0.062
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               38.854
+Skew:                           0.065   Prob(JB):                     3.66e-09
+Kurtosis:                       3.788   Cond. No.                     1.37e+06
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
+[2] The condition number is large, 1.37e+06. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+=== Americas Revenue Regression ===
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:       Americas_Revenue   R-squared:                       0.872
+Model:                            OLS   Adj. R-squared:                  0.871
+Method:                 Least Squares   F-statistic:                -4.591e+09
+Date:                Fri, 03 Oct 2025   Prob (F-statistic):               1.00
+Time:                        14:47:57   Log-Likelihood:                -7979.4
+No. Observations:                1461   AIC:                         1.598e+04
+Df Residuals:                    1449   BIC:                         1.605e+04
+Df Model:                          11                                         
+Covariance Type:              cluster                                         
+============================================================================================
+                               coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------
+const                     6446.7155   1.33e+04      0.484      0.628   -1.96e+04    3.25e+04
+Trade_Weighted_USD_Index   -11.1627      3.068     -3.638      0.000     -17.176      -5.149
+log_US_Real_GDP          -5663.1329   2103.027     -2.693      0.007   -9784.990   -1541.276
+log_US_PCE                 280.4211    946.959      0.296      0.767   -1575.585    2136.427
+US_CPI                       3.9748     10.522      0.378      0.706     -16.649      24.598
+US_Consumer_Sentiment       -4.3721      2.171     -2.014      0.044      -8.628      -0.117
+US_Federal_Funds_Rate      -10.2957     46.822     -0.220      0.826    -102.065      81.474
+log_EU_Real_GDP           3189.5796   1595.117      2.000      0.046      63.207    6315.952
+log_EU_Retail_Sales        735.4078    906.021      0.812      0.417   -1040.362    2511.177
+EU_HICP                      6.0948     18.618      0.327      0.743     -30.395      42.585
+EU_Consumer_Confidence      -2.6676      2.117     -1.260      0.208      -6.818       1.482
+EU_ECB_Policy_Rate          56.0806     47.058      1.192      0.233     -36.151     148.312
+==============================================================================
+Omnibus:                      106.011   Durbin-Watson:                   0.042
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              128.853
+Skew:                           0.685   Prob(JB):                     1.05e-28
+Kurtosis:                       3.487   Cond. No.                     1.37e+06
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
+[2] The condition number is large, 1.37e+06. This might indicate that there are
+strong multicollinearity or other numerical problems.

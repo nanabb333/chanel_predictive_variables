@@ -1,0 +1,51 @@
+=== LASSO Results for Americas_Revenue ===
+Optimal alpha (lambda): 4.2068
+
+Selected variables (non-zero coefficients):
+Trade_Weighted_USD_Index   -38.146572
+log_US_Real_GDP            -10.461056
+US_Consumer_Sentiment      -47.590197
+US_Federal_Funds_Rate       59.607453
+log_EU_Retail_Sales         73.777352
+EU_Consumer_Confidence     -40.573295
+dtype: float64
+
+All coefficients:
+Trade_Weighted_USD_Index   -38.146572
+log_US_Real_GDP            -10.461056
+log_US_PCE                  -0.000000
+US_CPI                       0.000000
+US_Consumer_Sentiment      -47.590197
+US_Federal_Funds_Rate       59.607453
+log_EU_Real_GDP              0.000000
+log_EU_Retail_Sales         73.777352
+EU_HICP                      0.000000
+EU_Consumer_Confidence     -40.573295
+EU_ECB_Policy_Rate           0.000000
+dtype: float64
+
+
+=== LASSO Results for Europe_Revenue ===
+Optimal alpha (lambda): 17.0271
+
+Selected variables (non-zero coefficients):
+Trade_Weighted_USD_Index     -0.257089
+US_CPI                      304.347643
+log_EU_Retail_Sales          32.032329
+EU_Consumer_Confidence      -26.113801
+EU_ECB_Policy_Rate          311.766701
+dtype: float64
+
+All coefficients:
+Trade_Weighted_USD_Index     -0.257089
+log_US_Real_GDP               0.000000
+log_US_PCE                    0.000000
+US_CPI                      304.347643
+US_Consumer_Sentiment        -0.000000
+US_Federal_Funds_Rate         0.000000
+log_EU_Real_GDP               0.000000
+log_EU_Retail_Sales          32.032329
+EU_HICP                       0.000000
+EU_Consumer_Confidence      -26.113801
+EU_ECB_Policy_Rate          311.766701
+dtype: float64
