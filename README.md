@@ -1,6 +1,3 @@
-
-
-```markdown
 # 👜 Chanel Predictive Variables
 
 A reproducible Python pipeline modeling **Chanel’s regional revenues** using macroeconomic indicators from **FRED** and **Eurostat**.  
@@ -153,5 +150,5 @@ Supervised by **Prof. Krista Tuomi**
 This project is for **academic and research use**.
 Reuse and adaptation permitted with attribution.
 
-```
+
 
