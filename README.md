@@ -155,9 +155,3 @@ Reuse and adaptation permitted with attribution.
 
 ```
 
----
-
-🟢 **说明**：  
-这份 README 是“纯代码可复制”版本，即整段粘贴到 `README.md` 后即可直接使用，不需要额外排版。  
-是否希望我帮你生成一个“更简版（例如用于 GitHub 项目简介区域）”的 2–3 段摘要版？
-```
