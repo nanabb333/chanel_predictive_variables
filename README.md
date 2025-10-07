@@ -1,7 +1,7 @@
 # Chanel Predictive Variables
 
 A reproducible Python pipeline modeling **Chanel’s regional revenues** using macroeconomic indicators from **FRED** and **Eurostat**.  
-It compares **OLS (baseline)** and **LASSO (regularized)** regressions to identify the most influential predictors across the Americas and Europe.
+It compares **OLS (baseline)** and **LASSO (regularised)** regressions to identify the most influential predictors across the Americas and Europe.
 
 ---
 
