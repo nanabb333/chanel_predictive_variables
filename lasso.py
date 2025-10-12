@@ -51,7 +51,6 @@ def run_lasso(y_col, out_file):
         f.write("\n\nAll coefficients:\n")
         f.write(str(coef))
 
-    print(f"✅ LASSO {y_col} 完成，结果已保存: {out_file}")
     return lasso, selected
 
 
