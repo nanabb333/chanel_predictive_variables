@@ -50,9 +50,8 @@ for name, series_id in fred_series_to_fetch.items():
             final_fred_df = df_temp
         else:
             final_fred_df = final_fred_df.join(df_temp, how='outer')
-        print(f"成功获取: {name} ({series_id})")
     except Exception as e:
-        print(f"获取失败: {name} ({series_id}). 错误: {e}")
+        print(Error)
 
 final_fred_df = final_fred_df.ffill().bfill()
 
