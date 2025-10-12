@@ -3,7 +3,7 @@ import numpy as np
 import statsmodels.api as sm
 
 # === 1) 读取数据 ===
-df = pd.read_csv("/Users/tauras/Documents/Code/usbond/fred_with_chanel_optionA.csv")
+df = pd.read_csv("/Users/cjy/Documents/code/dataset.csv")
 
 # === 2) 对数化大数额变量 ===
 for col in ["US_Real_GDP", "US_PCE", "EU_Real_GDP", "EU_Retail_Sales"]:
@@ -38,7 +38,7 @@ def run_clustered_regression(y_col):
 model_europe   = run_clustered_regression("Europe_Revenue")
 model_americas = run_clustered_regression("Americas_Revenue")
 
-with open("/Users/tauras/Documents/Code/usbond/baseline_regression_results.txt", "w") as f:
+with open("/Users/cjy/Documents/code/baseline_regression_results.txt", "w") as f:
     f.write("=== Europe Revenue Regression ===\n")
     f.write(str(model_europe.summary()))
     f.write("\n\n=== Americas Revenue Regression ===\n")

@@ -4,7 +4,7 @@ from sklearn.linear_model import LassoCV
 from sklearn.preprocessing import StandardScaler
 
 # === 1) 读入数据 ===
-df = pd.read_csv("/Users/tauras/Documents/Code/usbond/fred_with_chanel_optionA.csv")
+df = pd.read_csv("/Users/cjy/Documents/code/dataset.csv")
 
 # === 2) 对数化大额变量 ===
 for col in ["US_Real_GDP", "US_PCE", "EU_Real_GDP", "EU_Retail_Sales"]:
@@ -56,7 +56,7 @@ def run_lasso(y_col, out_file):
 
 # === 5) 分别跑 Europe & Americas ===
 lasso_eu, sel_eu = run_lasso("Europe_Revenue",
-    "/Users/tauras/Documents/Code/usbond/lasso_results_europe.txt")
+    "/Users/cjy/Documents/code/lasso_results_europe.txt")
 
 lasso_us, sel_us = run_lasso("Americas_Revenue",
-    "/Users/tauras/Documents/Code/usbond/lasso_results_americas.txt")
+    "/Users/cjy/Documents/code/lasso_results_americas.txt")

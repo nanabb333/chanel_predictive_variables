@@ -3,7 +3,7 @@ import pandas as pd
 from pathlib import Path
 
 # === 1) 读取 FRED 宏观数据 ===
-fred_path = Path("/Users/tauras/Documents/Code/usbond/fred_macro_data_final.csv")
+fred_path = Path("/Users/cjy/Documents/code/dataset.csv")
 fred = pd.read_csv(fred_path)
 
 # 注意 DATE 格式是 dd/mm/yyyy，需要 dayfirst=True
@@ -29,8 +29,7 @@ merged = fred.merge(chanel, on="Year", how="left")
 merged = merged[merged["Year"].between(2021, 2024)]
 
 # === 4) 保存结果（CSV + Excel 两份）===
-out_csv = Path("/Users/tauras/Documents/Code/usbond/fred_with_chanel_optionA.csv")
-out_xlsx = Path("/Users/tauras/Documents/Code/usbond/fred_with_chanel_optionA.xlsx")
+out_csv = Path("/Users/cjy/Documents/code/dataset.csv")
 
 merged.to_csv(out_csv, index=False)
 merged.to_excel(out_xlsx, index=False)
