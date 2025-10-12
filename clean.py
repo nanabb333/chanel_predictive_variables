@@ -1,7 +1,7 @@
 import pandas as pd
 from pathlib import Path
 
-fred_path = Path("/Users/cjy/Documents/code/dataset.csv")
+fred_path = Path("/Users/cjy/Documents/code/fred_macro_data_final.csv")
 fred = pd.read_csv(fred_path)
 
 fred["DATE"] = pd.to_datetime(fred["DATE"], dayfirst=True, errors="coerce")
