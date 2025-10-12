@@ -1,14 +1,12 @@
 
-
-```markdown
-# 👜 Chanel Predictive Variables
+## Chanel Predictive Variables
 
 A reproducible Python pipeline modeling **Chanel’s regional revenues** using macroeconomic indicators from **FRED** and **Eurostat**.  
 It compares **OLS (baseline)** and **LASSO (regularized)** regressions to identify the most influential predictors across the Americas and Europe.
 
 ---
 
-## 📘 Overview
+## Overview
 
 - Clean and merge macroeconomic + Chanel data  
 - Run OLS baseline regression for each region  
@@ -17,11 +15,11 @@ It compares **OLS (baseline)** and **LASSO (regularized)** regressions to identi
 
 ---
 
-## 🧭 Project Structure
+## Project Structure
+
 
 ```
 
-.
 ├── baseline.py                      # Baseline OLS regression model
 ├── baseline_adjust.py               # Adjusted/sensitivity analysis version
 ├── clean.py                         # Data cleaning and dataset merging
@@ -37,35 +35,9 @@ It compares **OLS (baseline)** and **LASSO (regularized)** regressions to identi
 ├── lasso.txt                        # LASSO regression coefficients
 └── README.md                        # Project documentation
 
-````
-
----
-
-## ⚙️ Environment Setup
-
-```bash
-python -m venv .venv
-source .venv/bin/activate       # Windows: .venv\Scripts\activate
-pip install -U pip
-pip install pandas numpy scipy scikit-learn statsmodels matplotlib
-# optional for automated data pull
-pip install fredapi python-dotenv
-````
-
----
-
-## ▶️ Run Scripts
-
-```bash
-python clean.py             # Prepare merged dataset
-python baseline.py          # Baseline OLS regression
-python baseline_adjust.py   # Adjusted OLS model
-python lasso.py             # LASSO regression
 ```
 
----
-
-## 📊 Baseline Regression Summary
+## Baseline Regression Summary
 
 **Americas Revenue (OLS)**
 
@@ -91,7 +63,7 @@ python lasso.py             # LASSO regression
 
 ---
 
-## 🧩 LASSO Regression Summary
+## LASSO Regression Summary
 
 **Americas Revenue**
 
@@ -120,7 +92,7 @@ Trade_Weighted_USD_Index   -0.26
 
 ---
 
-## 🧠 Interpretation
+## Interpretation
 
 | Region   | Strong Negative Predictors                   | Strong Positive Predictors         |
 | :------- | :------------------------------------------- | :--------------------------------- |
@@ -129,7 +101,7 @@ Trade_Weighted_USD_Index   -0.26
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
 * Add cross-validation and rolling forecasts
 * Automate FRED API data collection
@@ -138,26 +110,18 @@ Trade_Weighted_USD_Index   -0.26
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Mi-Qin (Tina) Chen**
-📧 [mc3208a@american.edu](mailto:mc3208a@american.edu)
-🎓 American University — School of International Service
-Focus: International Political Economy & Data-Driven Luxury Market Analytics
-Supervised by **Prof. Krista Tuomi**
+* [mc3208a@american.edu](mailto:mc3208a@american.edu)
+* American University — School of International Service
+* Focus: International Political Economy & Data-Driven Luxury Market Analytics
+* Supervised by **Prof. Krista Tuomi**
 
 ---
 
-## 🪪 License
+## License
 
 This project is for **academic and research use**.
 Reuse and adaptation permitted with attribution.
 
-```
-
----
-
-🟢 **说明**：  
-这份 README 是“纯代码可复制”版本，即整段粘贴到 `README.md` 后即可直接使用，不需要额外排版。  
-是否希望我帮你生成一个“更简版（例如用于 GitHub 项目简介区域）”的 2–3 段摘要版？
-```
