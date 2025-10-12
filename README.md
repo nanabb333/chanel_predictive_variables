@@ -91,6 +91,38 @@ Trade_Weighted_USD_Index   -0.26
 ```
 
 ---
+## XGBOOST Summary
+
+```
+US Top Features (importance-based):
+US_GDP                    +284.0
+US_Real_GDP                +47.0
+US_PCE                     +27.0
+US_CPI                      +7.0
+US_Personal_Saving_Rate     +3.0
+US_Consumer_Sentiment       +1.0
+
+Model Performance:
+R² ≈ 0.999
+RMSE ≈ 0.206
+```
+
+```
+EU Top Features (importance-based):
+EU_GDP                    +284.0
+EU_Real_GDP                +74.0
+EU_Retail_Sales            +41.0
+EU_ECB_Policy_Rate         +15.0
+EU_Consumer_Confidence      +8.0
+EU_HICP                    +8.0
+EU_German_10Y_Bond_Yield   +3.0
+
+Model Performance:
+R² ≈ 0.999
+RMSE ≈ 0.223
+```
+
+---
 
 ## Interpretation
 
