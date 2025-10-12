@@ -1,17 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-xgboost_predict.py
-
-Train separate XGBoost regression models for Chanel’s Americas and Europe revenues.
-Uses macroeconomic indicators (US_*/EU_*) as region-specific predictors
-and log-transforms the target for stability.
-
-Outputs:
-  - metrics_americas.json / metrics_europe.json
-  - feature_importance_americas.csv / feature_importance_europe.csv
-  - predicted_vs_actual plots
-"""
 
 import pandas as pd
 import numpy as np
