@@ -26,7 +26,6 @@ def run_clustered_regression(y_col):
     X = sm.add_constant(df_model[X_cols])
     y = df_model[y_col]
     model = sm.OLS(y, X).fit(cov_type="cluster", cov_kwds={"groups": df_model["Year"]})
-    print(f"\n=== Baseline 回归结果: {y_col} ===")
     print(model.summary())
     return model
 
