@@ -4,12 +4,9 @@ import os
 
 
 try:
-
     fred_key = os.environ.get('FRED_API_KEY', '70d8df993b0bcf36557f9f678d98277c')
     fred = Fred(api_key=fred_key)
-    print("FRED API 初始化成功。")
 except Exception as e:
-    print(f"FRED API 初始化失败，请检查你的 API 密钥。错误: {e}")
     exit()
 
 
